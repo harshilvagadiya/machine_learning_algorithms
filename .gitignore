@@ -220,3 +220,4 @@ __marimo__/
 .streamlit/secrets.toml
 *.joblib
 *.~lock.commercial_real_estate.csv#
+supervised_learning/LassoRegression/data/house_price
