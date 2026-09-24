@@ -19,6 +19,10 @@ Humne is poore topic ko ek dumb student ke perspective se 7 crystal-clear guides
 | **05** | [05_feature_scaling_why_standardscaler_is_mandatory.md](file:///home/python/03_Custom_addons/ML/memory_notes/01_Linear_Family/03_Ridge_Regression/05_feature_scaling_why_standardscaler_is_mandatory.md) | Unfair fine paradox (Billionaire vs. Kid), data leakage ke rules, aur `StandardScaler` pipeline. |
 | **06** | [06_hyperparameter_tuning_ridgecv_and_gcv.md](file:///home/python/03_Custom_addons/ML/memory_notes/01_Linear_Family/03_Ridge_Regression/06_hyperparameter_tuning_ridgecv_and_gcv.md) | Chai mein cheeni analogy, `np.logspace` search grid, aur GCV (Generalized Cross-Validation) Hat matrix superpower! |
 | **07** | [07_production_pipeline_and_live_inference.md](file:///home/python/03_Custom_addons/ML/memory_notes/01_Linear_Family/03_Ridge_Regression/07_production_pipeline_and_live_inference.md) | Amazon packaging box analogy, `ColumnTransformer` + `Ridge`, `.joblib` export, aur live API smoke test. |
+| **08** | [08_model_evaluation_and_ols_vs_ridge_battle.md](file:///home/python/03_Custom_addons/ML/memory_notes/01_Linear_Family/03_Ridge_Regression/08_model_evaluation_and_ols_vs_ridge_battle.md) | Step 9: Head-to-Head OLS vs. Ridge Battle, Train vs Test $R^2$, Real Dollar RMSE (`np.expm1`), aur weight explosion check. |
+| **09** | [09_model_interpretation_and_feature_importance.md](file:///home/python/03_Custom_addons/ML/memory_notes/01_Linear_Family/03_Ridge_Regression/09_model_interpretation_and_feature_importance.md) | Step 10: Standardized weights interpretation, Value Boosters vs Reducers horizontal bar chart, aur shrinkage audit. |
+| **10** | [10_step_by_step_troubleshooting_and_common_pitfalls.md](file:///home/python/03_Custom_addons/ML/memory_notes/01_Linear_Family/03_Ridge_Regression/10_step_by_step_troubleshooting_and_common_pitfalls.md) | Post-Mortem Guide: `ValueError: Input y contains NaN`, buffer overflow, border alpha trap, aur unke 1-second permanent fixes! |
+
 
 ---
 

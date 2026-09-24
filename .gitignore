@@ -218,3 +218,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+*.joblib
+*.~lock.commercial_real_estate.csv#

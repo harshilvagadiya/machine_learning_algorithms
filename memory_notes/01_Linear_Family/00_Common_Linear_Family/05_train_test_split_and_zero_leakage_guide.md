@@ -32,28 +32,42 @@ Agar target variable (jaise `SalePrice` ya `Salary`) right-skewed hai (skewness 
 
 ### 2. Classification (Discrete Target): The Stratification Rule
 Agar target binary classification hai (`0` vs `1`):
-- `train_test_split(..., stratify=y)` lagana **MANDATORY** hai taaki train aur test dono mein positive class ka ratio barabar rahe.
+### 3. The Supervised Learning Golden Rule: TARGET CANNOT CONTAIN NaN!
+> 🚨 **Critical Rule (Khatre ki Ghanti):**  
+> Features ($X$) mein missing values ho sakti hain kyunki `SimpleImputer` unhe fill kar deta hai.  
+> Lekin **Target ($y$) mein ek bhi `NaN` allowed nahi hota!**  
+> Scikit-Learn ka `check_X_y` validator finite labels check karta hai. Agar $y$ mein `NaN` chala gaya, to model fit hote hi crash ho jayega:  
+> `ValueError: Input y contains NaN.`  
+> Isliye split karne se pehle target column ke saare `NaN` rows ko automatically drop karna **MANDATORY** hai!
 
 ---
 
-## 📋 Copy-Paste Boilerplate: Zero-Leakage Train-Test Splitter
+## 📋 Copy-Paste Boilerplate: Zero-Leakage Train-Test Splitter (With Target Guard)
 *(Isko copy karke kisi bhi notebook ke Step 5 mein paste karo)*
 
 ```python
 # ==============================================================================
-# 🌐 STEP 5: ENTERPRISE TRAIN-TEST SPLITTER (ZERO DATA LEAKAGE)
+# 🌐 STEP 5: ENTERPRISE TRAIN-TEST SPLITTER (ZERO DATA LEAKAGE + TARGET GUARD)
 # ==============================================================================
 import numpy as np
+import pandas as pd
 from sklearn.model_selection import train_test_split
 
 def perform_zero_leakage_split(df, target_col, drop_cols=None, is_classification=False, apply_log_target=False, test_size=0.20, random_state=42):
     """
     Executes a strict zero-leakage Train-Test split.
+    - Safety: Automatically filters out rows where target_col is NaN (Supervised Learning Golden Rule).
     - If classification: Uses stratify=y.
     - If regression & apply_log_target: Applies np.log1p transformation to y.
     """
     if drop_cols is None:
         drop_cols = []
+        
+    # 0. TARGET INTEGRITY GUARD: Supervised learning requires valid ground-truth labels!
+    if df[target_col].isnull().any():
+        n_dropped = df[target_col].isnull().sum()
+        print(f"⚠️ Target Safety Guard: Dropping {n_dropped:,} rows where target '{target_col}' is NaN!")
+        df = df.dropna(subset=[target_col]).reset_index(drop=True)
         
     X = df.drop(columns=[target_col] + drop_cols)
     y = df[target_col]
@@ -77,6 +91,7 @@ def perform_zero_leakage_split(df, target_col, drop_cols=None, is_classification
     print(f"Total Records          : {len(df):,}")
     print(f"Training Matrix (X_tr) : {X_train.shape[0]:,} rows × {X_train.shape[1]} features ({(1-test_size)*100:.0f}%)")
     print(f"Testing Matrix  (X_te) : {X_test.shape[0]:,} rows × {X_test.shape[1]} features ({test_size*100:.0f}%)")
+    print(f"Target Missing in y_tr : {y_train.isnull().sum()} nulls (Guaranteed Clean!)")
     if is_classification:
         tr_pos = (y_train == 1).mean() * 100
         te_pos = (y_test == 1).mean() * 100
@@ -88,4 +103,5 @@ def perform_zero_leakage_split(df, target_col, drop_cols=None, is_classification
 # Usage Example:
 # X_tr, X_te, y_tr, y_te = perform_zero_leakage_split(df, target_col='SalePrice', drop_cols=['Id'], apply_log_target=True)
 ```
+
 

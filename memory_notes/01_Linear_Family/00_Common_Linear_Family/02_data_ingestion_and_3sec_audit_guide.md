@@ -28,6 +28,8 @@ ROBUST FILE INGESTION                                 3-SECOND HEALTH AUDIT
    Kabhi bhi hardcoded fragile path mat do. Hamesha Python ka standard `Path` module use karo.
 2. **The `UnicodeDecodeError` Trap:**  
    Agar raw CSV file mein special characters hon (jaise Spanish/German text ya emojis), to standard `pd.read_csv()` crash ho jata hai. Hamesha fallback encoding `latin-1` try karo!
+3. **The `ParserError: Buffer overflow caught` Trap:**  
+   Agar CSV mein bade-bade multi-line text descriptions (jaise real estate descriptions) hon, to Pandas ka default C parser buffer overflow de deta hai. Iska ilaaj hai: **`engine='python'`** fallback!
 
 ---
 
@@ -44,6 +46,7 @@ import pandas as pd
 def load_and_audit_dataset(file_path):
     """
     Loads dataset with automated encoding fallback and prints an enterprise 3-second audit.
+    Loads dataset with automated encoding fallback and C-buffer overflow protection.
     Supports CSV and Excel files.
     """
     path = Path(file_path)
@@ -59,6 +62,23 @@ def load_and_audit_dataset(file_path):
     except UnicodeDecodeError:
         print("⚠️ UTF-8 decoding failed. Retrying with 'latin-1' encoding...")
         df = pd.read_csv(path, encoding='latin-1')
+    # Helper: Attempts default fast C engine, falls back to python engine on buffer overflow
+    def _read_csv_safe(p, encoding):
+        try:
+            return pd.read_csv(p, encoding=encoding)
+        except pd.errors.ParserError:
+            print("⚠️ ParserError (Buffer Overflow). Retrying with engine='python'...")
+            return pd.read_csv(p, encoding=encoding, engine='python')
+
+    # 1. Automated Ingestion with Encoding & Engine Fallback
+    if path.suffix.lower() in ['.xlsx', '.xls']:
+        df = pd.read_excel(path)
+    else:
+        try:
+            df = _read_csv_safe(path, 'utf-8')
+        except UnicodeDecodeError:
+            print("⚠️ UTF-8 decoding failed. Retrying with 'latin-1' encoding...")
+            df = _read_csv_safe(path, 'latin-1')
 
     # 2. Compute Health Metrics
     n_rows, n_cols = df.shape
