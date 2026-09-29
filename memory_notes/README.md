@@ -70,3 +70,27 @@ Yahan Machine Learning algorithms ko natural mathematical families mein organize
   * Guide 05: [Regression Evaluation Metrics & Residual Diagnostics](02_Distance_Based_Family/02_KNN_Regressor/05_regression_evaluation_metrics_and_residuals.md)
   * Guide 06: [Hyperparameter Tuning & Spatial Tree Search](02_Distance_Based_Family/02_KNN_Regressor/06_hyperparameter_tuning_and_tree_search_optimization.md)
   * Guide 07: [Production Pipeline, Serialization & Live Inference](02_Distance_Based_Family/02_KNN_Regressor/07_production_pipeline_and_live_inference.md)
+
+---
+
+### 🔵 [03. Probabilistic Family Hub](03_Probabilistic_Family/README.md)
+* **[01_Naive_Bayes](03_Probabilistic_Family/01_Naive_Bayes/README.md):**
+  * Guide 01: [Bayes' Theorem: Prior, Likelihood, & Posterior](03_Probabilistic_Family/01_Naive_Bayes/01_bayes_theorem_prior_likelihood_posterior.md)
+  * Guide 02: [The "Naive" Conditional Independence Assumption](03_Probabilistic_Family/01_Naive_Bayes/02_the_naive_conditional_independence_assumption.md)
+  * Guide 03: [The Zero-Frequency Catastrophe & Laplace Smoothing](03_Probabilistic_Family/01_Naive_Bayes/03_the_zero_frequency_problem_and_laplace_smoothing.md)
+  * Guide 04: [Gaussian Naive Bayes & Bell Curve Distributions](03_Probabilistic_Family/01_Naive_Bayes/04_gaussian_nb_continuous_features_and_normal_distribution.md)
+  * Guide 05: [Multinomial Naive Bayes, Count Vectors, & Text NLP](03_Probabilistic_Family/01_Naive_Bayes/05_multinomial_nb_count_vectors_and_text_classification.md)
+  * Guide 06: [Bernoulli & Complement Naive Bayes for Imbalanced Data](03_Probabilistic_Family/01_Naive_Bayes/06_bernoulli_and_complement_nb_for_imbalanced_data.md)
+  * Guide 07: [Production Pipelines, Streaming partial_fit, & Sub-Millisecond SLAs](03_Probabilistic_Family/01_Naive_Bayes/07_production_pipeline_vectorization_and_live_inference.md)
+
+---
+
+### 🟣 [04. Tree-Based Family Hub](04_Tree_Based_Family/README.md)
+* **[01_Decision_Tree_Classifier](04_Tree_Based_Family/01_Decision_Tree_Classifier/README.md):**
+  * Guide 01: [Recursive Binary Partitioning & Slicing](04_Tree_Based_Family/01_Decision_Tree_Classifier/01_the_recursive_partitioning_and_splitting_intuition.md)
+  * Guide 02: [Splitting Criteria: Gini vs Entropy](04_Tree_Based_Family/01_Decision_Tree_Classifier/02_splitting_criteria_entropy_information_gain_vs_gini_impurity.md)
+  * Guide 03: [The Overfitting Monster & Pre-Pruning](04_Tree_Based_Family/01_Decision_Tree_Classifier/03_the_overfitting_monster_and_pre_pruning_hyperparameters.md)
+  * Guide 04: [Minimal Cost-Complexity Post-Pruning (ccp_alpha)](04_Tree_Based_Family/01_Decision_Tree_Classifier/04_post_pruning_cost_complexity_pruning_ccp_alpha.md)
+  * Guide 05: [Feature Importance: MDI vs Permutation Importance](04_Tree_Based_Family/01_Decision_Tree_Classifier/05_feature_importance_impurity_decrease_vs_permutation.md)
+  * Guide 06: [Tree Visualization & Decision Surfaces](04_Tree_Based_Family/01_Decision_Tree_Classifier/06_tree_visualization_and_decision_surfaces.md)
+  * Guide 07: [Production Pipelines, Latency SLAs (< 0.1ms), & SQL Export](04_Tree_Based_Family/01_Decision_Tree_Classifier/07_production_pipeline_tree_latency_and_deployment.md)
