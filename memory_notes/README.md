@@ -162,3 +162,128 @@ Yahan Machine Learning algorithms ko natural mathematical families mein organize
   * Guide 01: [Extremely Randomized Trees Mechanics & Random Thresholds](07_Ensemble_Methods/04_Extra_Trees/01_extremely_randomized_trees_mechanics_and_random_thresholds.md)
   * Guide 02: [Production Pipeline & Latency Benchmarks](07_Ensemble_Methods/04_Extra_Trees/02_production_pipeline_and_latency_benchmarks.md)
 
+---
+
+### 📈 [08. Advanced Regression Hub](08_Advanced_Regression/README.md)
+* **[Generalized Linear Models (GLM)](08_Advanced_Regression/Generalized_Linear_Models.md):** Poisson, Gamma, Tweedie, & **Negative Binomial** ($V(\mu) = \mu + \alpha\mu^2$).
+* **[Robust Regression](08_Advanced_Regression/Robust_Regression.md):** Huber, RANSAC, and Theil-Sen regressors.
+* **[Polynomial Regression](08_Advanced_Regression/Polynomial_Regression.md):** Non-linear basis expansion & Vandermonde structures.
+* **[Quantile Regression](08_Advanced_Regression/Quantile_Regression.md):** Asymmetric pinball loss & heteroscedastic prediction bands.
+* **[Gaussian Process Regression (GPR)](08_Advanced_Regression/Gaussian_Process_Regression.md):** Non-parametric Bayesian kernel regression with exact epistemic uncertainty.
+
+---
+
+### 🎯 [09. Advanced Classification Hub](09_Advanced_Classification/README.md)
+* **[Multi-Class Strategies](09_Advanced_Classification/MultiClass_Strategies/README.md):** One-vs-Rest (OvR) and One-vs-One (OvO) meta-architectures.
+* **[Probability Calibration](09_Advanced_Classification/Probability_Calibration/README.md):** Platt Scaling (Sigmoid) and Isotonic Regression for true frequentist confidence.
+
+---
+
+### 🧠 [10. Neural Networks Hub](10_Neural_Networks/README.md)
+* **[Perceptron](10_Neural_Networks/Perceptron/README.md):** Rosenblatt's threshold learning rule and linear separability boundaries.
+* **[Multi-Layer Perceptron (MLP)](10_Neural_Networks/MLPClassifier/README.md):** Universal Approximation Theorem, Backpropagation, Adam/L-BFGS optimization.
+
+---
+
+### 📐 [11. Discriminant Analysis Hub](11_Discriminant_Analysis/README.md)
+* **Linear Discriminant Analysis (LDA):** Homoscedastic Gaussian Bayes, Fisher's between/within variance maximization.
+* **Quadratic Discriminant Analysis (QDA):** Heteroscedastic class-specific covariance matrices and quadratic decision manifolds.
+
+---
+
+### 🎲 [12. Bayesian Regression Hub](12_Bayesian_Regression/README.md)
+* **Bayesian Ridge Regression:** Spherical Gaussian priors, exact posterior distribution, MacKay evidence maximization.
+* **Automatic Relevance Determination (ARD):** Component-wise hyperparameter priors for automated Bayesian feature sparsity.
+
+---
+
+### 📍 [13. Nearest Centroid Hub](13_Nearest_Centroid/README.md)
+* **Nearest Centroid Classifier:** Rocchio prototype classification, sub-0.05ms edge serving latency, Nearest Shrunken Centroids (PAM).
+
+---
+
+### 🧪 [14. Partial Least Squares Hub](14_Partial_Least_Squares/README.md)
+* **PLS Regression (PLSRegression):** Supervised bilinear latent component extraction under severe multicollinearity ($p \gg N$).
+* **PLS Canonical (PLSCanonical):** Bidirectional canonical correlation maximization across multi-target response manifolds.
+
+---
+
+### ⚡ [15. Passive-Aggressive Suite Hub](15_Passive_Aggressive/README.md)
+* **PAClassifier & PARegressor:** Online streaming margin updates, hinge loss analytical projection step, zero learning-rate tuning.
+
+---
+
+### ⚖️ [16. Cost-Sensitive Learning Hub](16_Cost_Sensitive_Learning/README.md)
+* **Cost-Sensitive Classifier:** Asymmetric cost matrices, Bayes optimal decision thresholding $\tau^* = \frac{C_{\text{FP}}}{C_{\text{FP}} + C_{\text{FN}}}$, class-weighted loss scaling.
+
+---
+
+### ⛓️ [17. Multi-Output & Chain Hub](17_Multi_Output/README.md)
+* **MultiOutputClassifier & MultiOutputRegressor:** Independent parallel multi-target decomposition.
+* **ClassifierChain & RegressorChain:** Autoregressive conditional dependency chains capturing cross-target covariances.
+
+---
+
+### 🥇 [18. Ordinal Classification Hub](18_Ordinal_Classification/README.md)
+* **Ordinal Classifier:** Frank & Hall (2001) threshold decomposition, Quadratic Weighted Kappa (QWK) optimization.
+
+---
+
+### 📐 [19. Orthogonal Distance Regression Hub](19_Orthogonal_Distance_Regression/README.md)
+* **Orthogonal Distance Regression (ODR):** Total Least Squares modeling observation noise in both covariates $\mathbf{X}$ and target $Y$.
+
+---
+
+### ⏳ [20. Survival Analysis Hub](20_Survival_Analysis/README.md)
+* **Cox Proportional Hazards & AFT:** Semi-parametric right-censoring handling, hazard functions $h(t)$, Harrell's Concordance Index (C-index).
+
+---
+
+### 🎯 [21. Learning-to-Rank Hub](21_Ranking_LTR/README.md)
+* **Ranking / LTR:** Pointwise, Pairwise RankNet, and Listwise LambdaMART ($\lambda$-gradient tree boosting) for direct NDCG@K optimization.
+
+---
+
+### 🧩 [22. Factorization Machines Hub](22_Factorization_Machines/README.md)
+* **Factorization Machines (FM & FFM):** Steffen Rendle 2nd-order latent embeddings, $\mathcal{O}(k \cdot p)$ linear-time interaction trick for sparse data.
+
+---
+
+## 🏛️ Architecture: Algorithm Families vs. Supporting Concepts
+
+```text
+SUPERVISED ALGORITHM FAMILIES (f: X -> Y)
+├── 01. Linear Models (Linear, Logistic, Ridge, Lasso, ElasticNet, SGD)
+├── 02. Distance-Based (KNN Classifier & Regressor)
+├── 03. Probabilistic (Gaussian, Multinomial, Bernoulli Naive Bayes)
+├── 04. Tree-Based (Decision Trees, Random Forest)
+├── 05. Support Vector Machines (SVC, SVR)
+├── 06. Boosting Family (AdaBoost, Gradient Boosting, HistGBM, XGBoost, LightGBM, CatBoost)
+├── 07. Ensemble Methods (Voting, Stacking, Blending, Bagging, Extra Trees)
+├── 08. Advanced Regression (GLM: Poisson/Gamma/Tweedie/NegBin, Robust, Poly, Quantile, GPR)
+├── 09. Advanced Classification (Multi-Class OvR/OvO, Probability Calibration)
+├── 10. Neural Networks (Perceptron, MLPClassifier, MLPRegressor)
+├── 11. Discriminant Analysis (LDA, QDA)
+├── 12. Bayesian Regression (Bayesian Ridge, ARD Regression)
+├── 13. Nearest Centroid Classifier
+├── 14. Partial Least Squares (PLS Regression, PLS Canonical)
+├── 15. Passive-Aggressive Algorithms (PAClassifier, PARegressor)
+├── 16. Cost-Sensitive Learning (Asymmetric loss, Bayes optimal thresholding)
+├── 17. Multi-Output Models (MultiOutput, Classifier Chains, Regressor Chains)
+├── 18. Ordinal Classification (Frank & Hall threshold decomposition)
+├── 19. Orthogonal Distance Regression (ODR / Errors-in-Variables)
+├── 20. Survival Analysis (Cox Proportional Hazards, AFT)
+├── 21. Learning-to-Rank (Pointwise, Pairwise, Listwise LambdaMART)
+└── 22. Factorization Machines (FM, FFM)
+
+SUPPORTING MACHINE LEARNING CONCEPTS (Methodological Infrastructure)
+├── Cross-Validation (K-Fold, StratifiedKFold, GroupKFold, TimeSeriesSplit)
+├── Hyperparameter Tuning (GridSearchCV, RandomizedSearchCV, Optuna BayesOpt)
+├── Feature Engineering & Transformation (PowerTransformer, QuantileTransformer, Splines)
+├── Feature Selection (SelectKBest, RFE, Permutation Importance, SHAP values)
+├── Imbalanced Learning (SMOTE, ADASYN, NearMiss, Class Weighting)
+├── Data Hygiene & Auditing (Zero-leakage split, cardinality analysis, missing value imputers)
+└── Production Deployment (Pipeline serialization, sub-50ms latency smoke testing)
+```
+
+
