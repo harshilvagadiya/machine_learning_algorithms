@@ -94,3 +94,71 @@ Yahan Machine Learning algorithms ko natural mathematical families mein organize
   * Guide 05: [Feature Importance: MDI vs Permutation Importance](04_Tree_Based_Family/01_Decision_Tree_Classifier/05_feature_importance_impurity_decrease_vs_permutation.md)
   * Guide 06: [Tree Visualization & Decision Surfaces](04_Tree_Based_Family/01_Decision_Tree_Classifier/06_tree_visualization_and_decision_surfaces.md)
   * Guide 07: [Production Pipelines, Latency SLAs (< 0.1ms), & SQL Export](04_Tree_Based_Family/01_Decision_Tree_Classifier/07_production_pipeline_tree_latency_and_deployment.md)
+
+---
+
+### 🛡️ [05. Support Vector Machine (SVM) Family Hub](05_SVM_Family/README.md)
+* **[01_Support_Vector_Classifier](05_SVM_Family/01_Support_Vector_Classifier/README.md):**
+  * Guide 01: [Geometric Margin & Hyperplane Intuition](05_SVM_Family/01_Support_Vector_Classifier/01_geometric_margin_and_hyperplane_intuition.md)
+  * Guide 02: [The Primal & Dual Optimization Problem](05_SVM_Family/01_Support_Vector_Classifier/02_the_primal_and_dual_optimization_problem.md)
+  * Guide 03: [The Kernel Trick (RBF, Poly, Sigmoid)](05_SVM_Family/01_Support_Vector_Classifier/03_the_kernel_trick_rbf_poly_sigmoid.md)
+  * Guide 04: [Hyperparameter Dynamics: C and Gamma](05_SVM_Family/01_Support_Vector_Classifier/04_hyperparameter_dynamics_c_and_gamma.md)
+  * Guide 05: [The Critical StandardScaler Rule](05_SVM_Family/01_Support_Vector_Classifier/05_the_critical_standard_scaler_rule.md)
+  * Guide 06: [Computational Complexity & Scaling Limits](05_SVM_Family/01_Support_Vector_Classifier/06_computational_complexity_and_scaling_limits.md)
+  * Guide 07: [Production Pipeline & Latency Benchmarks](05_SVM_Family/01_Support_Vector_Classifier/07_production_pipeline_and_latency_benchmarks.md)
+* **[02_Support_Vector_Regressor](05_SVM_Family/02_Support_Vector_Regressor/README.md):**
+  * Guide 01: [The Epsilon-Insensitive Tube Intuition](05_SVM_Family/02_Support_Vector_Regressor/01_the_epsilon_insensitive_tube_intuition.md)
+  * Guide 02: [Mathematical Formulation & Slack Variables](05_SVM_Family/02_Support_Vector_Regressor/02_mathematical_formulation_and_slack_variables.md)
+  * Guide 03: [Kernel SVR & Non-Linear Function Approximation](05_SVM_Family/02_Support_Vector_Regressor/03_kernel_svr_and_non_linear_function_approximation.md)
+  * Guide 04: [The Hyperparameter Trio (C, Epsilon, Gamma)](05_SVM_Family/02_Support_Vector_Regressor/04_hyperparameter_trio_c_epsilon_and_gamma.md)
+  * Guide 05: [Robustness to Outliers: SVR vs OLS vs RF](05_SVM_Family/02_Support_Vector_Regressor/05_robustness_to_outliers_svr_vs_ols_vs_rf.md)
+  * Guide 06: [Production Pipeline & Latency Benchmarks](05_SVM_Family/02_Support_Vector_Regressor/06_production_pipeline_and_latency_benchmarks.md)
+
+---
+
+### 🚀 [06. Boosting Family Hub](06_Boosting_Family/README.md)
+* **[01_AdaBoost_Classifier](06_Boosting_Family/01_AdaBoost_Classifier/README.md):**
+  * Guide 01: [Sequential Boosting & Weak Learner Intuition](06_Boosting_Family/01_AdaBoost_Classifier/01_sequential_boosting_and_weak_learner_intuition.md)
+  * Guide 02: [The AdaBoost Mathematics: Sample Weights & Alpha](06_Boosting_Family/01_AdaBoost_Classifier/02_the_adaboost_mathematics_sample_weights_and_alpha.md)
+  * Guide 03: [Exponential Loss & Coordinate Descent Interpretation](06_Boosting_Family/01_AdaBoost_Classifier/03_exponential_loss_and_gradient_interpretation.md)
+  * Guide 04: [Hyperparameter Tuning: Learning Rate & Estimators](06_Boosting_Family/01_AdaBoost_Classifier/04_hyperparameter_tuning_learning_rate_and_estimators.md)
+  * Guide 05: [Production Pipeline & Latency Benchmarks](06_Boosting_Family/01_AdaBoost_Classifier/05_production_pipeline_and_latency_benchmarks.md)
+* **[02_AdaBoost_Regressor](06_Boosting_Family/02_AdaBoost_Regressor/README.md):**
+  * Guide 01: [AdaBoost Regression & Drucker's AdaBoost.R2 Algorithm](06_Boosting_Family/02_AdaBoost_Regressor/01_adaboost_regression_and_druckers_algorithm.md)
+  * Guide 02: [Loss Functions: Linear vs Square vs Exponential](06_Boosting_Family/02_AdaBoost_Regressor/02_loss_functions_linear_square_exponential.md)
+  * Guide 03: [Sample Reweighting & The Weighted Median Prediction Rule](06_Boosting_Family/02_AdaBoost_Regressor/03_sample_reweighting_and_weighted_median_prediction.md)
+  * Guide 04: [Hyperparameter Optimization & Shrinkage](06_Boosting_Family/02_AdaBoost_Regressor/04_hyperparameter_optimization_and_shrinkage.md)
+  * Guide 05: [Production Pipeline & Latency Benchmarks](06_Boosting_Family/02_AdaBoost_Regressor/05_production_pipeline_and_latency_benchmarks.md)
+* **[03_Gradient_Boosting_Classifier](06_Boosting_Family/03_Gradient_Boosting_Classifier/README.md):**
+  * Guide 01: [GBM Philosophy & Function-Space Gradient Descent](06_Boosting_Family/03_Gradient_Boosting_Classifier/01_gradient_boosting_machine_philosophy_and_function_space_descent.md)
+  * Guide 02: [Mathematics of Pseudo-Residuals & Leaf Outputs](06_Boosting_Family/03_Gradient_Boosting_Classifier/02_the_mathematics_of_pseudo_residuals_and_leaf_output_values.md)
+  * Guide 03: [Shrinkage, Learning Rate & Stochastic Subsampling](06_Boosting_Family/03_Gradient_Boosting_Classifier/03_shrinkage_learning_rate_and_stochastic_subsampling.md)
+  * Guide 04: [Hyperparameter Tuning & Early Stopping](06_Boosting_Family/03_Gradient_Boosting_Classifier/04_hyperparameter_tuning_overfitting_and_early_stopping.md)
+  * Guide 05: [Production Pipeline & Latency Benchmarks](06_Boosting_Family/03_Gradient_Boosting_Classifier/05_production_pipeline_and_latency_benchmarks.md)
+* **[04_Gradient_Boosting_Regressor](06_Boosting_Family/04_Gradient_Boosting_Regressor/README.md):**
+  * Guide 01: [Gradient Boosting Regression & Loss Functions](06_Boosting_Family/04_Gradient_Boosting_Regressor/01_gradient_boosting_regression_and_loss_functions.md)
+  * Guide 02: [Regression Gradient Descent Algorithm & Leaf Updates](06_Boosting_Family/04_Gradient_Boosting_Regressor/02_the_regression_gradient_descent_algorithm_and_leaf_updates.md)
+  * Guide 03: [Huber Loss & Quantile Loss for Robust Modeling](06_Boosting_Family/04_Gradient_Boosting_Regressor/03_huber_loss_and_quantile_loss_for_robust_modeling.md)
+  * Guide 04: [Hyperparameter Optimization & Stochastic Subsampling](06_Boosting_Family/04_Gradient_Boosting_Regressor/04_hyperparameter_tuning_learning_rate_and_stochastic_subsampling.md)
+  * Guide 05: [Production Pipeline & Latency Benchmarks](06_Boosting_Family/04_Gradient_Boosting_Regressor/05_production_pipeline_and_latency_benchmarks.md)
+* **[05_Hist_Gradient_Boosting](06_Boosting_Family/05_Hist_Gradient_Boosting/README.md):**
+  * Guide 01: [Histogram Binning & LightGBM Roots](06_Boosting_Family/05_Hist_Gradient_Boosting/01_histogram_binning_and_lightgbm_roots.md)
+  * Guide 02: [HistGradientBoosting Classifier & Regressor Mechanics](06_Boosting_Family/05_Hist_Gradient_Boosting/02_hist_gradient_boosting_classifier_and_regressor_mechanics.md)
+  * Guide 03: [Production Pipeline & Latency Benchmarks](06_Boosting_Family/05_Hist_Gradient_Boosting/03_production_pipeline_and_latency_benchmarks.md)
+
+---
+
+### 🤝 [07. Ensemble Methods Hub](07_Ensemble_Methods/README.md)
+* **[01_Voting](07_Ensemble_Methods/01_Voting/README.md):**
+  * Guide 01: [Hard vs. Soft Voting Principles & Condorcet's Theorem](07_Ensemble_Methods/01_Voting/01_hard_vs_soft_voting_principles.md)
+  * Guide 02: [Production Pipeline & Latency Benchmarks](07_Ensemble_Methods/01_Voting/02_production_pipeline_and_latency_benchmarks.md)
+* **[02_Stacking](07_Ensemble_Methods/02_Stacking/README.md):**
+  * Guide 01: [Stacked Generalization & Out-Of-Fold Meta-Learning](07_Ensemble_Methods/02_Stacking/01_stacked_generalization_and_out_of_fold_meta_learning.md)
+  * Guide 02: [Production Pipeline & Latency Benchmarks](07_Ensemble_Methods/02_Stacking/02_production_pipeline_and_latency_benchmarks.md)
+* **[03_Bagging_and_Pasting](07_Ensemble_Methods/03_Bagging_and_Pasting/README.md):**
+  * Guide 01: [Bootstrap Aggregating vs. Pasting & Random Subspaces](07_Ensemble_Methods/03_Bagging_and_Pasting/01_bootstrap_aggregating_vs_pasting_and_random_subspaces.md)
+  * Guide 02: [Production Pipeline & Latency Benchmarks](07_Ensemble_Methods/03_Bagging_and_Pasting/02_production_pipeline_and_latency_benchmarks.md)
+* **[04_Extra_Trees](07_Ensemble_Methods/04_Extra_Trees/README.md):**
+  * Guide 01: [Extremely Randomized Trees Mechanics & Random Thresholds](07_Ensemble_Methods/04_Extra_Trees/01_extremely_randomized_trees_mechanics_and_random_thresholds.md)
+  * Guide 02: [Production Pipeline & Latency Benchmarks](07_Ensemble_Methods/04_Extra_Trees/02_production_pipeline_and_latency_benchmarks.md)
+
