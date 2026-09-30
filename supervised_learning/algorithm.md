@@ -1,126 +1,82 @@
-# 🤖 Supervised Learning — Progress Tracker & Roadmap
+# 🤖 Supervised Learning — Comprehensive Progress Tracker & Master Directory
 
-Aapde Supervised Machine Learning algorithms ne potani natural mathematical families ane dedicated production folders ma step-by-step implement kari rahya chhiye. Har ek algorithm mate real Kaggle datasets, end-to-end executed enterprise notebooks, serialized `.joblib` production pipelines, ane deep theory memory notes complete chhe.
+A complete, enterprise-grade roadmap and index of all **Supervised Machine Learning Algorithm Families** ($f: \mathcal{X} \to \mathcal{Y}$) and specialized architectures.
 
----
+Every family folder in `supervised_learning/` is prefixed with an intuitive **sequential learning step number (`01_` to `23_`)** matching the corresponding detailed theoretical notes in `memory_notes/`.
 
-## 📊 Family-wise Completion Summary
-
-| Algorithm Family | Total Implemented | Status | Dedicated Directory |
-| :--- | :---: | :---: | :--- |
-| **01. Linear Family** | 7 Algorithms (28+ Notebooks) | ✅ **100% COMPLETE** | [`supervised_learning/Linear_Family/`](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family) |
-| **02. Distance-Based Family** | 2 Algorithms (8+ Notebooks) | ✅ **100% COMPLETE** | [`supervised_learning/Distance_Based/KNN/`](file:///home/python/03_Custom_addons/ML/supervised_learning/Distance_Based/KNN) |
-| **03. Probabilistic Family** | 3 Algorithms (12+ Notebooks) | ✅ **100% COMPLETE** | [`supervised_learning/Probabilistic/NaiveBayes/`](file:///home/python/03_Custom_addons/ML/supervised_learning/Probabilistic/NaiveBayes) |
-| **04. Tree-Based Family** | 4 Algorithms (16+ Notebooks) | ✅ **100% COMPLETE** | [`supervised_learning/Tree_Based/`](file:///home/python/03_Custom_addons/ML/supervised_learning/Tree_Based) |
-| **05. SVM Family** | 2 Algorithms (8+ Notebooks) | ✅ **100% COMPLETE** | [`supervised_learning/SVM_Family/`](file:///home/python/03_Custom_addons/ML/supervised_learning/SVM_Family) |
-| **06. Boosting Family** | 6 Target Implementations | 🚀 **NEXT IN PROGRESS** | `supervised_learning/Boosting_Family/` |
-| **07. Ensemble Methods** | 4 Target Implementations | ⏳ **QUEUED** | `supervised_learning/Ensemble_Methods/` |
-| **08. Advanced Reg/Clf** | Specialized Extensions | ⏳ **QUEUED LATER** | `supervised_learning/Advanced/` |
+Every algorithm implementation strictly adheres to the **Enterprise 13-Step Standard**:
+1. **4 Real-World Datasets** per algorithm / sub-family (Zero synthetic data).
+2. **End-to-End Executed Jupyter Notebooks** with full outputs, convergence logs, and visualization plots.
+3. **Serialized `.joblib` Production Pipelines** equipped with zero-leakage `ColumnTransformer` preprocessing.
+4. **Sub-50ms Serving Latency Verification** (`assert avg_latency < 50.0 ms`) for real-time inference.
+5. **Comprehensive Mathematical Memory Notes** with full KaTeX LaTeX formulations and architectural comparisons.
 
 ---
 
-## 🗂️ Detailed Algorithm Checklist
+## 🧭 Step-by-Step Learning Path & Directory Index
 
-### 🟢 1. Linear / Linear-Family (✅ COMPLETE)
-- [x] **[Linear Regression](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family/LinearRegression)**: OLS, Normal Equation, Gradient Descent, Multicollinearity analysis.
-- [x] **[Logistic Regression](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family/LogisticRegression)**: Sigmoid, Binary & Multiclass Cross-Entropy, Threshold tuning.
-- [x] **[Ridge Regression](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family/RidgeRegression)**: $L_2$ Tikhonov Regularization, weight decay, solving variance explosion.
-- [x] **[Lasso Regression](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family/LassoRegression)**: $L_1$ Regularization, coordinate descent, automatic sparse feature selection.
-- [x] **[Elastic Net Regression](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family/ElasticNetRegression)**: Dual $L_1 + L_2$ elastic compromise, handling correlated collinear groups.
-- [x] **[SGD Regressor](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family/SGDRegressor)**: Out-of-core online learning, streaming regression via `partial_fit`.
-- [x] **[SGD Classifier](file:///home/python/03_Custom_addons/ML/supervised_learning/Linear_Family/SGDClassifier)**: Chameleon loss optimizer (Log-loss, Hinge, Modified Huber), big data streaming classification.
-
----
-
-### 🟡 2. Distance-Based Family (✅ COMPLETE)
-- [x] **[KNN Classifier](file:///home/python/03_Custom_addons/ML/supervised_learning/Distance_Based/KNN/KNNClassifier)**: $k$-NN majority voting, Euclidean/Manhattan distance, KD-Tree / Ball-Tree search, Curse of Dimensionality.
-- [x] **[KNN Regressor](file:///home/python/03_Custom_addons/ML/supervised_learning/Distance_Based/KNN/KNNRegressor)**: Local distance-weighted spatial interpolation, the critical extrapolation limitation.
-
----
-
-### 🔵 3. Probabilistic Family (✅ COMPLETE)
-- [x] **[Gaussian Naive Bayes](file:///home/python/03_Custom_addons/ML/supervised_learning/Probabilistic/NaiveBayes/GaussianNaiveBayes)**: Continuous Gaussian likelihoods, `var_smoothing` variance floor protection, Yeo-Johnson PowerTransformers.
-- [x] **[Multinomial Naive Bayes](file:///home/python/03_Custom_addons/ML/supervised_learning/Probabilistic/NaiveBayes/MultinomialNaiveBayes)**: Discrete text count vectors (Bag-of-Words, TF-IDF), Laplace smoothing $\alpha$, the "Never StandardScale Text" golden rule.
-- [x] **[Bernoulli Naive Bayes](file:///home/python/03_Custom_addons/ML/supervised_learning/Probabilistic/NaiveBayes/BernoulliNaiveBayes)**: Binary symptom / cybersecurity indicators, absence penalties ($1 - \theta_{jc}$).
-
----
-
-### 🟣 4. Tree-Based Family (✅ COMPLETE)
-- [x] **[Decision Tree Classifier](file:///home/python/03_Custom_addons/ML/supervised_learning/Tree_Based/DecisionTree/DecisionTreeClassifier)**: Recursive binary partitioning, Gini vs. Entropy, pre-pruning (`max_depth`, `min_samples_leaf`), post-pruning (`ccp_alpha`).
-- [x] **[Decision Tree Regressor](file:///home/python/03_Custom_addons/ML/supervised_learning/Tree_Based/DecisionTree/DecisionTreeRegressor)**: Variance reduction splits, piece-wise constant step functions, leaf node estimation.
-- [x] **[Random Forest Classifier](file:///home/python/03_Custom_addons/ML/supervised_learning/Tree_Based/RandomForest/RandomForestClassifier)**: Bootstrap Aggregation (Bagging), random feature subspace $m = \lfloor \sqrt{p} \rfloor$, Out-of-Bag (OOB) validation, MDI vs. Permutation importance.
-- [x] **[Random Forest Regressor](file:///home/python/03_Custom_addons/ML/supervised_learning/Tree_Based/RandomForest/RandomForestRegressor)**: Variance reduction via ensemble averaging $\frac{1}{B}\sum f_b(x)$, random subspace $m = \lfloor p/3 \rfloor$, non-linear regression, extrapolation boundary limits.
+| Step # | Family Directory (Code & Models) | Memory Notes (Deep Theory) | Core Concepts / Algorithms | Notebooks | Models | Status |
+| :---: | :--- | :--- | :--- | :---: | :---: | :---: |
+| **01** | [`01_Linear_Family/`](file:///home/python/03_Custom_addons/ML/supervised_learning/01_Linear_Family) | [`01_Linear_Family`](file:///home/python/03_Custom_addons/ML/memory_notes/01_Linear_Family) | OLS Linear, Logistic, Ridge, Lasso, ElasticNet, SGD | 26 | 17 | ✅ Done |
+| **02** | [`02_Distance_Based/`](file:///home/python/03_Custom_addons/ML/supervised_learning/02_Distance_Based) | [`02_Distance_Based_Family`](file:///home/python/03_Custom_addons/ML/memory_notes/02_Distance_Based_Family) | KNN Classifier, KNN Regressor, KD-Tree, Ball-Tree | 8 | 8 | ✅ Done |
+| **03** | [`03_Probabilistic/`](file:///home/python/03_Custom_addons/ML/supervised_learning/03_Probabilistic) | [`03_Probabilistic_Family`](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family) | Gaussian, Multinomial, Bernoulli Naive Bayes | 12 | 12 | ✅ Done |
+| **04** | [`04_Tree_Based/`](file:///home/python/03_Custom_addons/ML/supervised_learning/04_Tree_Based) | [`04_Tree_Based_Family`](file:///home/python/03_Custom_addons/ML/memory_notes/04_Tree_Based_Family) | Decision Trees & Random Forests (Clf & Reg) | 16 | 16 | ✅ Done |
+| **05** | [`05_SVM_Family/`](file:///home/python/03_Custom_addons/ML/supervised_learning/05_SVM_Family) | [`05_SVM_Family`](file:///home/python/03_Custom_addons/ML/memory_notes/05_SVM_Family) | Support Vector Classifier (SVC), Support Vector Regressor (SVR) | 8 | 8 | ✅ Done |
+| **06** | [`06_Boosting_Family/`](file:///home/python/03_Custom_addons/ML/supervised_learning/06_Boosting_Family) | [`06_Boosting_Family`](file:///home/python/03_Custom_addons/ML/memory_notes/06_Boosting_Family) | AdaBoost, GradientBoosting, HistGBM, XGBoost, LightGBM, CatBoost | 48 | 48 | ✅ Done |
+| **07** | [`07_Ensemble_Methods/`](file:///home/python/03_Custom_addons/ML/supervised_learning/07_Ensemble_Methods) | [`07_Ensemble_Methods`](file:///home/python/03_Custom_addons/ML/memory_notes/07_Ensemble_Methods) | Bagging, Extra Trees, Voting, Stacking, Blending | 40 | 40 | ✅ Done |
+| **08** | [`08_Advanced_Regression/`](file:///home/python/03_Custom_addons/ML/supervised_learning/08_Advanced_Regression) | [`08_Advanced_Regression`](file:///home/python/03_Custom_addons/ML/memory_notes/08_Advanced_Regression) | Poisson, Gamma, Tweedie, NegBinomial, Robust, Quantile, Poly, GPR | 24 | 24 | ✅ Done |
+| **09** | [`09_Advanced_Classification/`](file:///home/python/03_Custom_addons/ML/supervised_learning/09_Advanced_Classification) | [`09_Advanced_Classification`](file:///home/python/03_Custom_addons/ML/memory_notes/09_Advanced_Classification) | One-vs-Rest, One-vs-One, Platt Calibration, Isotonic Calibration | 8 | 8 | ✅ Done |
+| **10** | [`10_Neural_Networks/`](file:///home/python/03_Custom_addons/ML/supervised_learning/10_Neural_Networks) | [`10_Neural_Networks`](file:///home/python/03_Custom_addons/ML/memory_notes/10_Neural_Networks) | Perceptron, Multi-Layer Perceptron (MLPClassifier, MLPRegressor) | 12 | 12 | ✅ Done |
+| **11** | [`11_Discriminant_Analysis/`](file:///home/python/03_Custom_addons/ML/supervised_learning/11_Discriminant_Analysis) | [`11_Discriminant_Analysis`](file:///home/python/03_Custom_addons/ML/memory_notes/11_Discriminant_Analysis) | Linear Discriminant Analysis (LDA), Quadratic Discriminant Analysis (QDA) | 8 | 8 | ✅ Done |
+| **12** | [`12_Bayesian_Regression/`](file:///home/python/03_Custom_addons/ML/supervised_learning/12_Bayesian_Regression) | [`12_Bayesian_Regression`](file:///home/python/03_Custom_addons/ML/memory_notes/12_Bayesian_Regression) | Bayesian Ridge Regression, Automatic Relevance Determination (ARD) | 8 | 8 | ✅ Done |
+| **13** | [`13_Nearest_Centroid/`](file:///home/python/03_Custom_addons/ML/supervised_learning/13_Nearest_Centroid) | [`13_Nearest_Centroid`](file:///home/python/03_Custom_addons/ML/memory_notes/13_Nearest_Centroid) | Nearest Centroid Classifier (Rocchio, Shrinkage Thresholds) | 4 | 4 | ✅ Done |
+| **14** | [`14_Partial_Least_Squares/`](file:///home/python/03_Custom_addons/ML/supervised_learning/14_Partial_Least_Squares) | [`14_Partial_Least_Squares`](file:///home/python/03_Custom_addons/ML/memory_notes/14_Partial_Least_Squares) | PLS Regression (`PLSRegression`), PLS Canonical (`PLSCanonical`) | 8 | 8 | ✅ Done |
+| **15** | [`15_Passive_Aggressive/`](file:///home/python/03_Custom_addons/ML/supervised_learning/15_Passive_Aggressive) | [`15_Passive_Aggressive`](file:///home/python/03_Custom_addons/ML/memory_notes/15_Passive_Aggressive) | Passive-Aggressive Classifier & Regressor (Online Streaming Margin) | 8 | 8 | ✅ Done |
+| **16** | [`16_Cost_Sensitive/`](file:///home/python/03_Custom_addons/ML/supervised_learning/16_Cost_Sensitive) | [`16_Cost_Sensitive_Learning`](file:///home/python/03_Custom_addons/ML/memory_notes/16_Cost_Sensitive_Learning) | Cost-Sensitive Classifier (Asymmetric Loss Matrices, Optimal $\tau^*$) | 4 | 4 | ✅ Done |
+| **17** | [`17_Multi_Output/`](file:///home/python/03_Custom_addons/ML/supervised_learning/17_Multi_Output) | [`17_Multi_Output`](file:///home/python/03_Custom_addons/ML/memory_notes/17_Multi_Output) | MultiOutputClassifier, ClassifierChain, MultiOutputRegressor, RegressorChain | 16 | 16 | ✅ Done |
+| **18** | [`18_Ordinal_Classification/`](file:///home/python/03_Custom_addons/ML/supervised_learning/18_Ordinal_Classification) | [`18_Ordinal_Classification`](file:///home/python/03_Custom_addons/ML/memory_notes/18_Ordinal_Classification) | Frank-Hall Binary Decomposition, Quadratic Weighted Kappa | 4 | 4 | ✅ Done |
+| **19** | [`19_Orthogonal_Distance_Regression/`](file:///home/python/03_Custom_addons/ML/supervised_learning/19_Orthogonal_Distance_Regression) | [`19_Orthogonal_Distance_Regression`](file:///home/python/03_Custom_addons/ML/memory_notes/19_Orthogonal_Distance_Regression) | ODR (Total Least Squares for Errors-in-Variables) | 4 | 4 | ✅ Done |
+| **20** | [`20_Survival_Analysis/`](file:///home/python/03_Custom_addons/ML/supervised_learning/20_Survival_Analysis) | [`20_Survival_Analysis`](file:///home/python/03_Custom_addons/ML/memory_notes/20_Survival_Analysis) | Cox Proportional Hazards (`CoxPHFitter`), Random Survival Forest (`RSF`) | 8 | 8 | ✅ Done |
+| **21** | [`21_Ranking_LTR/`](file:///home/python/03_Custom_addons/ML/supervised_learning/21_Ranking_LTR) | [`21_Ranking_LTR`](file:///home/python/03_Custom_addons/ML/memory_notes/21_Ranking_LTR) | Pointwise, Pairwise RankNet, Listwise LambdaMART (`LGBMRanker`) | 4 | 4 | ✅ Done |
+| **22** | [`22_Factorization_Machines/`](file:///home/python/03_Custom_addons/ML/supervised_learning/22_Factorization_Machines) | [`22_Factorization_Machines`](file:///home/python/03_Custom_addons/ML/memory_notes/22_Factorization_Machines) | Factorization Machines (FM $\mathcal{O}(k \cdot p)$), Field-Aware FM (FFM) | 8 | 8 | ✅ Done |
+| **23** | [`23_Gaussian_Processes/`](file:///home/python/03_Custom_addons/ML/supervised_learning/23_Gaussian_Processes) | [`08_Advanced_Regression/Gaussian_Process_Regression.md`](file:///home/python/03_Custom_addons/ML/memory_notes/08_Advanced_Regression/Gaussian_Process_Regression.md) | Gaussian Process Classification (GPC - Laplace Approximation) | 4 | 4 | ✅ Done |
+| **TOTAL** | **23 Sequenced Learning Steps** | **Full 23-Topic Theory Hub** | **73 Production Sub-Suites Across 23 Algorithm Families** | **290** | **281** | **100% COMPLETE** |
 
 ---
 
-### 🔴 5. SVM Family (Support Vector Machines) (✅ COMPLETE)
-- [x] **[Support Vector Classification (SVC)](file:///home/python/03_Custom_addons/ML/supervised_learning/SVM_Family/SVC)**: Geometric margin maximization $\frac{2}{\|\mathbf{w}\|}$, soft-margin slack variables $\xi_i$, Mercer's kernel trick (Linear, RBF Gaussian, Polynomial), mandatory `StandardScaler` rule, cost-sensitive class weights.
-- [x] **[Support Vector Regression (SVR)](file:///home/python/03_Custom_addons/ML/supervised_learning/SVM_Family/SVR)**: Vapnik $\varepsilon$-insensitive loss tube, dual leverage capping $\alpha_i^* \le C$, non-linear manifold approximation, outlier robustness.
+## 🏛️ Architectural Principle: 2-Tier Separation
 
----
-
-### 🟠 6. Boosting Family (🚀 NEXT IN PROGRESS)
-- [ ] **AdaBoost Classifier** ← **CURRENT FOCUS**
-  - Adaptive boosting, sequential sample re-weighting, decision stumps, exponential loss minimization.
-- [ ] **AdaBoost Regressor**
-  - Linear/Square/Exponential loss weighting for continuous targets.
-- [ ] **Gradient Boosting Classifier**
-  - Gradient descent in function space, pseudo-residuals, learning rate shrinkage, log-loss optimization.
-- [ ] **Gradient Boosting Regressor**
-  - Mean squared error and Huber loss optimization via sequential shallow trees.
-- [ ] **HistGradientBoosting (Classifier & Regressor)**
-  - Fast histogram-based binning (LightGBM-style in scikit-learn), native missing value support.
-- [ ] **XGBoost (Extreme Gradient Boosting)** ⭐
-  - Second-order Taylor expansion gradients, column subsampling, hardware cache-awareness.
-- [ ] **LightGBM** ⭐
-  - Gradient-based One-Side Sampling (GOSS), Exclusive Feature Bundling (EFB), Leaf-wise growth.
-- [ ] **CatBoost** ⭐
-  - Symmetric trees (oblivious trees), ordered target encoding for categorical features without data leakage.
-
----
-
-### 🟤 7. Ensemble Methods (General Ensembles) (⏳ QUEUED)
-- [ ] **Voting Classifier** (Hard vs. Soft Voting across heterogeneous model families)
-- [ ] **Voting Regressor** (Ensemble weighted average across linear, tree, and kernel regressors)
-- [ ] **Stacking Classifier** (Out-of-fold cross-validated meta-learners)
-- [ ] **Stacking Regressor** (Meta-regression blending)
-- [ ] **Bagging / Pasting** (`BaggingClassifier`, `BaggingRegressor` with non-tree estimators like KNN/LogReg)
-- [ ] **Extra Trees (Extremely Randomized Trees)** (Random split thresholds for maximum variance reduction)
-
----
-
-### 🟦 8. Advanced Regression & Classification (⏳ QUEUED LATER)
-- [ ] Polynomial Regression (Higher-degree interaction modeling)
-- [ ] Robust Regression (RANSAC, HuberRegressor, Theil-Sen)
-- [ ] Quantile Regression (Predicting conditional quantiles e.g. 10th, 50th, 90th percentiles)
-- [ ] Poisson / Gamma / Tweedie GLM (Count and zero-inflated insurance claims)
-- [ ] Multi-Label & Multi-Output Classification
-- [ ] Gaussian Process Regression & Classification
-
----
-
-## 🎯 Current Learning & Execution Flow
+We enforce strict separation between **Supervised Learning Algorithm Families** and **Supporting ML Concepts**:
 
 ```text
-Linear Family (7 Models)                ✅ COMPLETE
-        ↓
-Distance-Based Family (KNN Clf & Reg)   ✅ COMPLETE
-        ↓
-Probabilistic Family (3 Naive Bayes)    ✅ COMPLETE
-        ↓
-Tree-Based: Decision Trees              ✅ COMPLETE
-        ↓
-Tree-Based: Random Forest               ✅ COMPLETE
-        ↓
-SVM Family: SVC & SVR                   ✅ COMPLETE
-        ↓
-Boosting Family: AdaBoost               ← 🚀 NEXT
-        ↓
-Boosting Family: Gradient Boosting
-        ↓
-Boosting Family: HistGradientBoosting / Modern Boosters (XGBoost, LightGBM, CatBoost)
-        ↓
-Ensemble Methods: Voting, Stacking, Bagging, Extra Trees
-        ↓
-Advanced Regressors & Generalized Linear Models
+                               🤖 SUPERVISED LEARNING ($f: \mathcal{X} \to \mathcal{Y}$)
+                                                       │
+        ┌──────────────────────────────────────────────┼──────────────────────────────────────────────┐
+        │                                              │                                              │
+        ▼                                              ▼                                              ▼
+  STEPS 01, 08, 12, 19                          STEPS 04, 06, 07                               STEPS 02, 03, 05, 09-23
+  LINEAR, GLM & CONTINUOUS                      TREES & ENSEMBLES                              SPECIALIZED PARADIGMS
+  ├─ 01_Linear_Family                           ├─ 04_Tree_Based                               ├─ 02_Distance_Based
+  ├─ 08_Advanced_Regression                     ├─ 06_Boosting_Family                          ├─ 03_Probabilistic
+  ├─ 12_Bayesian_Regression                     └─ 07_Ensemble_Methods                         ├─ 05_SVM_Family
+  └─ 19_Orthogonal_Distance_Regression                                                         ├─ 09_Advanced_Classification
+                                                                                               ├─ 10_Neural_Networks
+                                                                                               ├─ 11_Discriminant_Analysis
+                                                                                               ├─ 13_Nearest_Centroid
+                                                                                               ├─ 14_Partial_Least_Squares
+                                                                                               ├─ 15_Passive_Aggressive
+                                                                                               ├─ 16_Cost_Sensitive
+                                                                                               ├─ 17_Multi_Output
+                                                                                               ├─ 18_Ordinal_Classification
+                                                                                               ├─ 20_Survival_Analysis
+                                                                                               ├─ 21_Ranking_LTR
+                                                                                               ├─ 22_Factorization_Machines
+                                                                                               └─ 23_Gaussian_Processes
 ```
+
+### Supporting ML Concepts (Cross-Cutting Pipelines, NOT Separate Model Families):
+- **Cross-Validation Strategies:** K-Fold, Stratified K-Fold, TimeSeriesSplit, GroupKFold.
+- **Hyperparameter Optimization:** Grid Search, Randomized Search, Bayesian Search (Optuna).
+- **Feature Engineering & Preprocessing:** Imputation, One-Hot / Target Encoding, PowerTransform, Scaling.
+- **Model Explainability & Diagnostics:** SHAP values, Permutation Importance, Partial Dependence Plots (PDP).
+- **Imbalanced Learning:** SMOTE, Class Weighting, Focal Loss, Threshold Moving.
