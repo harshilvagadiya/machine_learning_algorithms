@@ -2,6 +2,7 @@
 
 Welcome to the Bernoulli Naive Bayes memory notes. Covers binary multivariate indicators, absence penalties, and cybersecurity applications.
 
+0. [00. Bernoulli Naive Bayes Simple Guide & 7-Step Formula (Hinglish/Easy)](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/03_Bernoulli_Naive_Bayes/00_bernoulli_naive_bayes_simple_concept_and_steps_guide.md)
 1. [01. Bernoulli Distribution & Binary Indicators](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/03_Bernoulli_Naive_Bayes/01_bernoulli_distribution_and_binary_indicators.md)
 2. [02. The Absence Penalty: Bernoulli vs. Multinomial](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/03_Bernoulli_Naive_Bayes/02_the_absence_penalty_bernoulli_vs_multinomial.md)
 3. [03. Binarization Thresholds & Feature Encoding](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/03_Bernoulli_Naive_Bayes/03_binarization_thresholds_and_one_hot_encoding.md)

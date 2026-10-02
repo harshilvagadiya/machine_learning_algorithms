@@ -2,6 +2,7 @@
 
 Welcome to the Gaussian Naive Bayes memory notes. Covers normal continuous densities, variance smoothing, and real-time inference.
 
+0. [00. Gaussian Naive Bayes Simple Guide & 7-Step Formula (Hinglish/Easy)](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/01_Gaussian_Naive_Bayes/00_gaussian_naive_bayes_simple_concept_and_steps_guide.md)
 1. [01. Bayes' Theorem & Continuous Density](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/01_Gaussian_Naive_Bayes/01_bayes_theorem_and_continuous_density.md)
 2. [02. The Gaussian Normal Distribution Assumption](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/01_Gaussian_Naive_Bayes/02_the_gaussian_normal_distribution_assumption.md)
 3. [03. The Variance Smoothing Guard](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/01_Gaussian_Naive_Bayes/03_the_variance_smoothing_guard_var_smoothing.md)

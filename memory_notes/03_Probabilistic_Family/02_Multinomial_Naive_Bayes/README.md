@@ -2,6 +2,7 @@
 
 Welcome to the Multinomial Naive Bayes memory notes. Covers count/TF-IDF distributions, Laplace smoothing, and NLP pipelines.
 
+0. [00. Multinomial Naive Bayes Simple Guide & 7-Step Formula (Hinglish/Easy)](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/02_Multinomial_Naive_Bayes/00_multinomial_naive_bayes_simple_concept_and_steps_guide.md)
 1. [01. Multinomial Distribution & Text Counts](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/02_Multinomial_Naive_Bayes/01_multinomial_distribution_and_text_counts.md)
 2. [02. The Zero-Frequency Trap & Laplace Smoothing](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/02_Multinomial_Naive_Bayes/02_the_zero_frequency_trap_and_laplace_smoothing.md)
 3. [03. The Critical Rule: Never StandardScaler Text](file:///home/python/03_Custom_addons/ML/memory_notes/03_Probabilistic_Family/02_Multinomial_Naive_Bayes/03_the_critical_standardscaler_rule_never_scale_text.md)

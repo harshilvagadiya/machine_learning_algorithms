@@ -27,6 +27,7 @@ Welcome to the **K-Nearest Neighbors (KNN) Regressor** architectural knowledge h
 
 | Guide | Core Focus | Key Questions Answered |
 | :--- | :--- | :--- |
+| **[00. KNN Regressor Simple Guide & 7 Steps](00_knn_regressor_simple_concept_and_steps_guide.md)** | **Master Hinglish Guide** | **Intuitive donkey-level mental model + exact Step 7 to 13 code sequence!** |
 | **[01. The Local Mean & Intuition](01_the_local_mean_and_interpolation_intuition.md)** | Non-parametric Regression | How does KNN predict numbers without slope ($w$) or intercept ($b$)? Real estate appraisal analogy. |
 | **[02. Uniform vs Distance Surfaces](02_uniform_vs_distance_weighted_surfaces.md)** | Surface Geometry | Why does `weights='uniform'` create a staircase step function? How does `weights='distance'` smooth it? |
 | **[03. The Extrapolation Disaster](03_the_extrapolation_disaster_and_failure_modes.md)** | Critical Failure Modes | Why can KNN NEVER predict beyond $\\max(y_{\\text{train}})$? The 15,000 sq ft mansion disaster. |

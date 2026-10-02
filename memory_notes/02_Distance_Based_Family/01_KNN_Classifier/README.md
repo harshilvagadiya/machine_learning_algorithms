@@ -27,6 +27,7 @@ Welcome to the **K-Nearest Neighbors (KNN) Classifier** architectural knowledge 
 
 | Guide | Core Focus | Key Questions Answered |
 | :--- | :--- | :--- |
+| **[00. KNN Classifier Simple Guide & 7 Steps](00_knn_classifier_simple_concept_and_steps_guide.md)** | **Master Hinglish Guide** | **Intuitive donkey-level mental model + exact Step 7 to 13 code sequence!** |
 | **[01. The Lazy Learner & Intuition](01_the_lazy_learner_and_non_parametric_intuition.md)** | Non-parametric mental model | Why is training $O(1)$ and inference $O(N \cdot D)$? What does lazy learning mean? |
 | **[02. Distance Metrics & Geometry](02_distance_metrics_and_geometric_math.md)** | Minkowski, Euclidean, Manhattan | Why does unscaled data destroy KNN completely? When to use Manhattan vs Euclidean? |
 | **[03. Bias-Variance & Weighting](03_the_bias_variance_tradeoff_of_k_and_weighting.md)** | Regularization via $K$ | What happens at $K=1$ vs $K=N$? How does `weights='distance'` prevent majority tyranny? |
